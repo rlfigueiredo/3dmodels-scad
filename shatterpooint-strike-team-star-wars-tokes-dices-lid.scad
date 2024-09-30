@@ -1,0 +1,19 @@
+$fn=360;
+//67x93x22
+x=109;
+y=159;
+z=6;
+magnetdia=6;
+//square([x+4,y+4]);
+difference() {
+    translate([0,0,0])
+    cube([x,y,z]);
+    translate([32,22,1])
+    cube([50,117,5]);
+    translate([25,22,1])
+    cube([x-60,y-95,5]);
+    translate([84,20,z-2])
+    cylinder(h=2,d=magnetdia);
+    translate([29,93,z-2])
+    cylinder(h=2,d=magnetdia);
+}

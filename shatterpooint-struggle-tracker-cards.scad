@@ -1,0 +1,31 @@
+//$fn=360;
+//67x93x22
+x=278;
+y=133;
+z=14;
+zparts=4;
+struggletrackerx=274;
+struggletrackery=53;
+struggletrackerz=2;
+struggleobjectivex=123;
+struggleobjectivey=74;
+difference() {
+  translate([0,0,0])
+  cube([x,y,z]);
+  translate([2,2,zparts])
+  cube([struggletrackerx,struggletrackery,z]);
+  translate([2,struggletrackery+4,zparts])
+  cube([struggleobjectivex,struggleobjectivey,z]);
+  translate([struggletrackerx/2+15,struggletrackery+4,zparts])
+  cube([struggleobjectivex,struggleobjectivey,z]);
+  translate([0,10,zparts])
+  cube([x,struggletrackery-15,z]);
+  translate([0,struggletrackery+10,zparts])
+  cube([struggleobjectivex,struggleobjectivey-15,z]);
+  translate([struggleobjectivex+40,struggletrackery+10,zparts])
+  cube([struggleobjectivex,struggleobjectivey-15,z]);
+  translate([10,0,zparts])
+  cube([struggleobjectivex-20,y,z]);
+  translate([struggletrackerx/2+25,0,zparts])
+  cube([struggleobjectivex-20,y,z]);
+}

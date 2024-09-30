@@ -1,0 +1,43 @@
+$fn=360;
+//67x93x22
+x=109;
+y=156;
+z=1;
+magnetdia=6;
+//square([x+4,y+4]);
+difference() {
+    translate([0,0,0])
+    cube([x+16,y+16,z+3]);
+    translate([8,8,3])
+    cube([x,y,z]);
+    //translate([5,0,15])
+    //cube([x-8,y,z-20]);
+    translate([4,4,z+2])
+    cylinder(h=1,d=magnetdia);
+    translate([44,4,z+2])
+    cylinder(h=1,d=magnetdia);
+    translate([84,4,z+2])
+    cylinder(h=1,d=magnetdia);
+    translate([4,44,z+2])
+    cylinder(h=1,d=magnetdia);
+    translate([4,84,z+2])
+    cylinder(h=1,d=magnetdia);
+    translate([4,124,z+2])
+    cylinder(h=1,d=magnetdia);
+    translate([4,y+12,z+2])
+    cylinder(h=1,d=magnetdia);
+    translate([44,y+12,z+2])
+    cylinder(h=1,d=magnetdia);
+    translate([84,y+12,z+2])
+    cylinder(h=1,d=magnetdia);
+    translate([x+12,y+12,z+2])
+    cylinder(h=1,d=magnetdia);
+    translate([x+12,4,z+2])
+    cylinder(h=1,d=magnetdia);
+    translate([x+12,44,z+2])
+    cylinder(h=1,d=magnetdia);
+    translate([x+12,84,z+2])
+    cylinder(h=1,d=magnetdia);
+    translate([x+12,124,z+2])
+    cylinder(h=1,d=magnetdia);
+}

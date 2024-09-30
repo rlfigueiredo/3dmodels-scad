@@ -1,0 +1,29 @@
+$fn=360;
+//67x93x22
+//coins=53
+//100token=27
+//100token1=23
+//50token=17
+//10token=14
+h=55-50;
+d=90;
+coins=(d-(d-53));
+100token=(d-(d-27));
+100token1=(d-(d-23));
+50token=(d-(d-17));
+10token=(d-(d-14));
+
+difference() {
+    translate([0,0,0])
+    cylinder(h,d,d);
+    translate([-38,0,2])
+    cylinder(h,coins,coins);
+    translate([40,-50,2])
+    cylinder(h,100token,100token);
+    translate([69,0,5])
+    cylinder(h,100token1,100token1);
+    translate([55,50,2])
+    cylinder(h,50token,50token);
+    translate([20,75,2])
+    cylinder(h,10token,10token);
+}
