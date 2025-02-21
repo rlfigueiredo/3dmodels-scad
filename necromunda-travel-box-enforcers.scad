@@ -1,10 +1,10 @@
-//$fn=360;
+    $fn=360;
 //67x93x22
 x=165;
 y=160;
 z=60;
-baseironheadsx=29;
-baseironheadsz=5;
+basesubjulgatorsx=40;
+basesubjulgatorsz=5;
 baseenforcersx=26;
 baseenforcersz=5;
 
@@ -36,11 +36,11 @@ difference() {
     //top gap
     translate([1,2,z-2])
     cube([x-2,y-3,2]);
-    for ( x1= [3,34] ) {
+    for ( x1= [10] ) {
       translate([x1,3,2])
-      cube([baseironheadsx,y-20,baseironheadsz]);
+      cube([basesubjulgatorsx,y-20,basesubjulgatorsz]);
       translate([x1+2,3,4])
-      cube([baseironheadsx-4,y-20,baseironheadsz]);
+      cube([basesubjulgatorsx-4,y-20,basesubjulgatorsz]);
     }
     for ( x1= [69,97] ) {
       translate([x1,3,2])
